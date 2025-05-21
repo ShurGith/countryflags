@@ -12,4 +12,4 @@ export const badgesColors = [
 	"bg-amber-400/10 text-amber-400 ring-amber-400/20",
 ];
 
-export const badgeCommon = "inline-flex items-center rounded-md px-2 py-1 text-sm font-medium ring-1 ring-inset";
+export const badgeCommon = "inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset";

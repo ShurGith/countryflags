@@ -8,7 +8,6 @@ export const FilterProvider = ({ children }) => {
 	const [allCountries, setAllCountries] = useState([]);
 	const [selectedCountry, setSelectedCountry] = useState(null);
 	const continents = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania', 'Antarctic'];
-	const ITEMS_PER_LOAD = 21;
 
 	return (
 		<FilterContext.Provider
