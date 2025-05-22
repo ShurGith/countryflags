@@ -1,7 +1,7 @@
 # Country Flags - Fronten Metonr Challenge
 
 
-![alt text](https://github.com/ShurGith/countryflags/blob/main/public/cardthree.png))
+![alt text](/public/cardthree.png))
 ![alt text](https://github.com/ShurGith/countryflags/blob/main/public/cardtwo.png))
 ![Image text](https://github.com/ShurGith/countryflags/blob/main/public/cardone.png)
 
