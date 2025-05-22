@@ -45,9 +45,13 @@ export const MainProvider = ({ children }) => {
     for (let i = badgesColors.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [numArr[i], numArr[j]] = [numArr[j], numArr[i]];
-      bgColors.push(badgeCommon + ' ' + badgesColors[i]);
+      //bgColors.push(badgeCommon + ' ' + badgesColors[j]);
     }
-
+    for (let i = 0; i < numArr.length; i++) {
+      bgColors.push(badgeCommon + ' ' + badgesColors[numArr[i]])
+    }
+    console.log(bgColors)
+    console.log(numArr)
     return bgColors;
   }
 

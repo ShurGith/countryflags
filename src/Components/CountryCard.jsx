@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useMainContext } from '../context/MainContext';
+import { Icon } from '@iconify-icon/react'
 
 const CountryCard = () => {
 	const [country, setcountry] = useState(null);
@@ -28,8 +29,8 @@ const CountryCard = () => {
 		}
 	}, [codigo]);
 
-	if (error) return <p>Error: {error}</p>;
-	if (!country) return <p>Cargando...</p>;
+	if (error) return <p className='text-red-500'>Error: {error}</p>;
+	if (!country) return <p className='text-gray-500'>Cargando...</p>;
 
 
 	const bkgColors = theBadges()
@@ -61,11 +62,15 @@ const CountryCard = () => {
 					<p><strong>Timezones:</strong> {country.timezones.join(', ') || '—'}</p>
 					<p><strong>Independent:</strong> {country.independent ? 'Yes' : 'No'}</p>
 					<div className="flex flex-wrap gap-2 mt-4">
-						<a href={country.maps.googleMaps} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">View on Google Maps</a>
-						<a href={country.maps.openStreetMaps} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">View on OpenStreetMap</a>
+						<a href={country.maps.googleMaps} target="_blank" rel="noopener noreferrer"
+							className="px-2 py-1 border rounded-xl flex items-center  gap-2 text-blue-500 hover:no-underline">
+							<Icon icon="simple-icons:googlemaps" width="24" height="24" />
+							View on Google Maps</a>
+						<a href={country.maps.openStreetMaps} target="_blank" rel="noopener noreferrer"
+							className="px-2 py-1 border rounded-xl no-underline flex items-center  gap-2 text-blue-500 hover:no-underline">
+							<Icon icon="arcticons:maps" width="24" height="24" />
+							View on OpenStreetMap</a>
 					</div>
-
-
 
 					<div className='mt-8 w-full'>
 						{country.borders && country.borders.length > 0 && (
@@ -76,7 +81,7 @@ const CountryCard = () => {
 										<Link
 											to={`/country/${borderCode}`}
 											key={borderCode}
-											className={`${bkgColors[index]}`}>
+											className={`${bkgColors[index]} hover:shadow-md shadow-blue-500 transition duration-300`}>
 											{nameCountry(borderCode)}
 										</Link>
 									))}

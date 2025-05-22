@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useFilterContext } from "./context/FilterContext.jsx";
 import { useMainContext } from "./context/MainContext.jsx";
 import { Link } from "react-router-dom";
@@ -39,11 +39,10 @@ const ListingMain = () => {
 					<div
 						key={country.cca3}
 						onClick={() => setSelectedCountry(country)}
-						className="bg-white dark:bg-gray-800 shadow-md dark:shadow-lg rounded-lg hover:shadow-xl transition duration-300 flex flex-col"
+						className="bg-white dark:bg-gray-800 shadow-md dark:shadow-lg rounded-lg hover:shadow-xl transition duration-300 flex flex-col cursor-pointer"
 					>
 						<div>
-							<img
-								src={country.flags.svg}
+							<img src={country.flags.svg}
 								alt={country.name.common}
 								className="w-full h-60 object-cover rounded-md mb-4"
 							/>
