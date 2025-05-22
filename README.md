@@ -1,7 +1,7 @@
 # Country Flags - Fronten Metonr Challenge
 
-<span>![</span><span>Aquí la descripción de la imagen por si no carga</span><span>]</span><span>(</span><span>https://github.com/ShurGith/countryflags/public/cardone.png</span><span>)</span>
-![Image text](https://github.com/ShurGith/countryflags/blob/master/cardone.png)
+
+![Image text](https://github.com/ShurGith/countryflags/blob/main/public/cardone.png)
 ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
