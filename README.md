@@ -2,7 +2,7 @@
 
 
 ![Image text](https://github.com/ShurGith/countryflags/blob/main/public/cardone.png)
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/ShurGith/countryflags/blob/main/public/cardthree.png))
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
