@@ -1,9 +1,9 @@
 # Country Flags - Fronten Metonr Challenge
 
 
-![Card Three](/public/cardthree.png))
-![Card Two](/public/cardtwo.png))
-![Card One]/public/cardone.png)
+![alt text](/public/cardthree.png))
+![alt text](/public/cardtwo.png))
+![Image text](/public/cardone.png)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
